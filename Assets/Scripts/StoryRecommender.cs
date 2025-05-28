@@ -4,40 +4,52 @@ using UnityEngine;
 public class StoryRecommender : MonoBehaviour
 {
     public UserProfile userProfile;
-    public CSVLoader storyLoader;
+    public TSVLoader storyLoader; // Or CSVLoader if you're still using that
 
-    public List<Story> Test;
-
-    public void Start()
+    /// <summary>
+    /// Recommends the top 'n' stories based on cosine similarity to the user's preferences.
+    /// Stories already clicked or shown more than 3 times will be excluded.
+    /// Increments TimesShown for returned stories.
+    /// </summary>
+    public List<Story> RecommendStories(int n)
     {
-        Test = RecommendTop5();
-    }
-    public List<Story> RecommendTop5()
-    {
-        List<Story> candidates = new List<Story>();
-
-        foreach (var story in storyLoader.AllStories)
+        if (userProfile == null || storyLoader == null)
         {
-            if (story.Clicked || story.TimesShown >= 3)
-                continue;
-
-            candidates.Add(story);
+            Debug.LogError("Missing references in StoryRecommender.");
+            return new List<Story>();
         }
 
-        candidates.Sort((a, b) =>
+        List<Story> eligible = new List<Story>();
+
+        foreach (Story story in storyLoader.AllStories)
+        {
+            if (!story.Clicked && story.TimesShown < 3)
+            {
+                eligible.Add(story);
+            }
+        }
+
+        eligible.Sort((a, b) =>
             CosineSimilarity(userProfile.Preferences, b.CategoryScores)
             .CompareTo(CosineSimilarity(userProfile.Preferences, a.CategoryScores))
         );
 
-        List<Story> top5 = candidates.GetRange(0, Mathf.Min(5, candidates.Count));
-        foreach (var s in top5) s.TimesShown++;
+        int count = Mathf.Min(n, eligible.Count);
+        List<Story> topStories = eligible.GetRange(0, count);
 
-        return top5;
+        foreach (Story s in topStories)
+            s.TimesShown++;
+
+        return topStories;
     }
 
+    /// <summary>
+    /// Computes cosine similarity between two 20-dimensional vectors.
+    /// </summary>
     float CosineSimilarity(float[] a, float[] b)
     {
         float dot = 0f, magA = 0f, magB = 0f;
+
         for (int i = 0; i < a.Length; i++)
         {
             dot += a[i] * b[i];

@@ -20,4 +20,9 @@ public class UserProfile : MonoBehaviour
             Preferences[i] = Mathf.Clamp(Preferences[i], 0f, 10f);
         }
     }
+
+    public void UpdateSingularPreference(int columnNumber, int modifier)
+    {
+        Preferences[columnNumber] += modifier;
+    }
 }
