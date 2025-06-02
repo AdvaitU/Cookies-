@@ -299,7 +299,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907712878771789930, guid: 3c541a63b27c1464d8bb0bc9945bfe6f, type: 3}
       propertyPath: m_Name
-      value: Headline1 Variant
+      value: PF_Headline_Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8360054171073654076, guid: 3c541a63b27c1464d8bb0bc9945bfe6f, type: 3}
       propertyPath: m_text
@@ -332,6 +332,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8360054171073654076, guid: 3c541a63b27c1464d8bb0bc9945bfe6f, type: 3}
       propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8360054171073654076, guid: 3c541a63b27c1464d8bb0bc9945bfe6f, type: 3}
+      propertyPath: m_overflowMode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8360054171073654076, guid: 3c541a63b27c1464d8bb0bc9945bfe6f, type: 3}
@@ -425,6 +429,7 @@ MonoBehaviour:
     CategoryScores: []
     TimesShown: 0
     Clicked: 0
+  author: {fileID: 6179213381000678300}
 --- !u!224 &1519047719148448968 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7642407027448654749, guid: 3c541a63b27c1464d8bb0bc9945bfe6f, type: 3}

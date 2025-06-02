@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\Personal Projects\\Cookies-\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0DB3F64B-ACC7-CC15-2118-DC7AD75362D2}|Assembly-CSharp.csproj|d:\\personal projects\\cookies-\\assets\\scripts\\headlineclick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DB3F64B-ACC7-CC15-2118-DC7AD75362D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\headlineclick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0DB3F64B-ACC7-CC15-2118-DC7AD75362D2}|Assembly-CSharp.csproj|d:\\personal projects\\cookies-\\assets\\scripts\\storyuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0DB3F64B-ACC7-CC15-2118-DC7AD75362D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\storyuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DB3F64B-ACC7-CC15-2118-DC7AD75362D2}|Assembly-CSharp.csproj|d:\\personal projects\\cookies-\\assets\\headlineclick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DB3F64B-ACC7-CC15-2118-DC7AD75362D2}|Assembly-CSharp.csproj|solutionrelative:assets\\headlineclick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DB3F64B-ACC7-CC15-2118-DC7AD75362D2}|Assembly-CSharp.csproj|D:\\Personal Projects\\Cookies-\\assets\\scripts\\tsvloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DB3F64B-ACC7-CC15-2118-DC7AD75362D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tsvloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0DB3F64B-ACC7-CC15-2118-DC7AD75362D2}|Assembly-CSharp.csproj|D:\\Personal Projects\\Cookies-\\assets\\scripts\\storyrecommender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,8 +27,8 @@
       "RelativeMoniker": "D:0:0:{0DB3F64B-ACC7-CC15-2118-DC7AD75362D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DB3F64B-ACC7-CC15-2118-DC7AD75362D2}|Assembly-CSharp.csproj|D:\\Personal Projects\\Cookies-\\assets\\scripts\\tsvloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DB3F64B-ACC7-CC15-2118-DC7AD75362D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tsvloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Personal Projects\\Cookies-\\Assets\\HeadlineClick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\HeadlineClick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,24 +38,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "HeadlineClick.cs",
+              "DocumentMoniker": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\HeadlineClick.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HeadlineClick.cs",
+              "ToolTip": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\HeadlineClick.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HeadlineClick.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T12:13:28.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "HeadlineClick.cs",
               "DocumentMoniker": "D:\\Personal Projects\\Cookies-\\Assets\\HeadlineClick.cs",
               "RelativeDocumentMoniker": "Assets\\HeadlineClick.cs",
               "ToolTip": "D:\\Personal Projects\\Cookies-\\Assets\\HeadlineClick.cs",
               "RelativeToolTip": "Assets\\HeadlineClick.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T17:01:42.236Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T17:01:42.236Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Story.cs",
               "DocumentMoniker": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\Story.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Story.cs",
@@ -59,37 +75,36 @@
               "RelativeToolTip": "Assets\\Scripts\\Story.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T11:07:11.243Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T11:07:11.243Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "TSVLoader.cs",
               "DocumentMoniker": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\TSVLoader.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TSVLoader.cs",
               "ToolTip": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\TSVLoader.cs",
               "RelativeToolTip": "Assets\\Scripts\\TSVLoader.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwCMAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-28T10:51:16.854Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "StoryUIManager.cs",
               "DocumentMoniker": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\StoryUIManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\StoryUIManager.cs",
               "ToolTip": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\StoryUIManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\StoryUIManager.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAuwDIAAAB0AAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAqwCgAAABmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-28T10:46:14.709Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "UserProfile.cs",
               "DocumentMoniker": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\UserProfile.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UserProfile.cs",
@@ -97,12 +112,11 @@
               "RelativeToolTip": "Assets\\Scripts\\UserProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T10:46:03.563Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T10:46:03.563Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "StoryRecommender.cs",
               "DocumentMoniker": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\StoryRecommender.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\StoryRecommender.cs",
@@ -110,8 +124,7 @@
               "RelativeToolTip": "Assets\\Scripts\\StoryRecommender.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T10:45:46.268Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T10:45:46.268Z"
             }
           ]
         }
