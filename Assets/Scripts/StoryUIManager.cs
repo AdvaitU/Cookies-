@@ -22,6 +22,7 @@ public class StoryUIManager : MonoBehaviour
 
 
     public List<Story> selectedStories = new List<Story>();
+    public List<Story> selectedRandomStories = new List<Story>();
     public Story mainStory;
 
     private string[] days = new string[] { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
@@ -41,6 +42,13 @@ public class StoryUIManager : MonoBehaviour
             recommendedStories[i].text = selectedStories[i].Headline;   // Display Recommended Stories
             recommendedStoryAuthors[i].text = selectedStories[i].Author; // Display Authors of Recommended Stories
         }
+
+        selectedRandomStories = recommender.LoadRandomStories(2);
+        recommendedStories[5].text = selectedRandomStories[0].Headline; // Display Random Story
+        recommendedStoryAuthors[5].text = selectedRandomStories[0].Author; // Display Author of Random Story
+        recommendedStories[6].text = selectedRandomStories[1].Headline; // Display Random Story
+        recommendedStoryAuthors[6].text = selectedRandomStories[1].Author; // Display Author of Random Story
+
     }
 
     public void RefreshMainStory()

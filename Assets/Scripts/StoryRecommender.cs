@@ -60,4 +60,32 @@ public class StoryRecommender : MonoBehaviour
         float denom = Mathf.Sqrt(magA) * Mathf.Sqrt(magB);
         return denom > 0f ? dot / denom : 0f;
     }
+
+    public Story LoadRandomStory()
+    {
+        if (storyLoader == null || storyLoader.AllStories.Count == 0)
+        {
+            Debug.LogError("No stories available to load.");
+            return null;
+        }
+        int randomIndex = Random.Range(0, storyLoader.AllStories.Count);
+        Story randomStory = storyLoader.AllStories[randomIndex];
+        randomStory.TimesShown++; // Increment TimesShown for the loaded story
+        return randomStory;
+    }
+
+    public List<Story> LoadRandomStories(int numberOfStories)
+    {
+
+        List<Story> randomStories = new List<Story>();
+        for (int j = 0; j < numberOfStories; j++)
+        {
+            Story randomStory = LoadRandomStory();
+            if (randomStory != null)
+            {
+                randomStories.Add(randomStory);
+            }
+        }
+        return randomStories;
+    }
 }

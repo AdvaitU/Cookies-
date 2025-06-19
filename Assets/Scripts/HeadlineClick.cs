@@ -12,9 +12,16 @@ public class HeadlineClick : MonoBehaviour
 
     public void LoadNextStoriesOnClick()
     {
-        story = storyUIManager.selectedStories[storyIndex]; // Get the story based on the index
+        if (storyIndex <= storyUIManager.selectedStories.Count - 1)
+        {
+            story = storyUIManager.selectedStories[storyIndex]; // Get the story based on the index
+        }
+        else { 
+        
+            story = storyUIManager.selectedRandomStories[storyIndex - storyUIManager.selectedStories.Count]; // Get the random story if index exceeds recommended stories
+        }
 
-        storyUIManager.mainStory = story; // Set the main story to the clicked story
+            storyUIManager.mainStory = story; // Set the main story to the clicked story
         storyUIManager.LoadNextStories(); // Load the next stories to update the UI
         userProfile.UpdatePreferences(story.CategoryScores); // Update user preferences based on the clicked story's scores
     }
