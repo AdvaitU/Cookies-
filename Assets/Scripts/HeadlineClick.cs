@@ -9,6 +9,10 @@ public class HeadlineClick : MonoBehaviour
     public UserProfile userProfile; // Reference to the UserProfile script
     public int storyIndex; // Index of the story in the recommended stories array
     public Story story; // Reference to the Story object
+    public CoffeeMatcher coffeeMatcher; // Reference to the CoffeeMatcher script
+
+    // Update the other two screens on click
+
 
     public void LoadNextStoriesOnClick()
     {
@@ -24,6 +28,8 @@ public class HeadlineClick : MonoBehaviour
             storyUIManager.mainStory = story; // Set the main story to the clicked story
         storyUIManager.LoadNextStories(); // Load the next stories to update the UI
         userProfile.UpdatePreferences(story.CategoryScores); // Update user preferences based on the clicked story's scores
+
+        coffeeMatcher.PublishCoffee(); // Update the coffee matcher with the new user profile
     }
 
 

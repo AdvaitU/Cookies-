@@ -25,4 +25,25 @@ public class UserProfile : MonoBehaviour
     {
         Preferences[columnNumber] += modifier;
     }
+
+
+    // Coffee Recommendation Methods
+    public float GetBoldness()
+    {
+        // Example: Politics, Foreign Affairs, Activism
+        return (Preferences[1] + Preferences[3] + Preferences[18]) / 3f * 10f;
+    }
+
+    public float GetComplexity()
+    {
+        // Example: Science, Tech, Opinion, Arts
+        return (Preferences[5] + Preferences[6] + Preferences[11] + Preferences[17]) / 4f * 10f;
+    }
+
+    public float GetBitterness()
+    {
+        // Example: Finance, Law, World News
+        return (Preferences[2] + Preferences[7] + Preferences[19]) / 3f * 10f;
+    }
+
 }

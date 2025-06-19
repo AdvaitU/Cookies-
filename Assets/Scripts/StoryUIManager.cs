@@ -39,6 +39,7 @@ public class StoryUIManager : MonoBehaviour
         selectedStories = recommender.RecommendStories(5);      // Get 5 Recommended Stories
         for (int i = 0; i < selectedStories.Count; i++)
         {
+            if (selectedStories[i] == mainStory) selectedStories[i] = recommender.RecommendStories(1)[0]; // Ensure main story is not in recommended stories
             recommendedStories[i].text = selectedStories[i].Headline;   // Display Recommended Stories
             recommendedStoryAuthors[i].text = selectedStories[i].Author; // Display Authors of Recommended Stories
         }
