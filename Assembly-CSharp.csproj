@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\CoffeeManager.cs" />
     <Compile Include="Assets\Scripts\HeadlineClick.cs" />
     <Compile Include="Assets\Scripts\TSVLoader.cs" />
+    <Compile Include="Assets\Scripts\CreditScoreGenerator.cs" />
     <Compile Include="Assets\Scripts\CoffeeArchetypes.cs" />
     <Compile Include="Assets\Scripts\Story.cs" />
     <Compile Include="Assets\Scripts\StoryUIManager.cs" />

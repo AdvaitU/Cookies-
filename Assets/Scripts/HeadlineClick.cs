@@ -10,6 +10,7 @@ public class HeadlineClick : MonoBehaviour
     public int storyIndex; // Index of the story in the recommended stories array
     public Story story; // Reference to the Story object
     public CoffeeMatcher coffeeMatcher; // Reference to the CoffeeMatcher script
+    public CreditScoreGenerator creditScoreGenerator; // Reference to the CreditScoreGenerator script
 
     // Update the other two screens on click
 
@@ -30,6 +31,7 @@ public class HeadlineClick : MonoBehaviour
         userProfile.UpdatePreferences(story.CategoryScores); // Update user preferences based on the clicked story's scores
 
         coffeeMatcher.PublishCoffee(); // Update the coffee matcher with the new user profile
+        creditScoreGenerator.PublishScore(); // Generate a new credit score based on updated preferences
     }
 
 
