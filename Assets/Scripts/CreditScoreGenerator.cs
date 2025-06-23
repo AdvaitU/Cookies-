@@ -5,18 +5,18 @@ public class CreditScoreGenerator : MonoBehaviour
 {
     public UserProfile userProfile;
 
-    [Range(100, 850)] public int RawCreditScore;
+    [Range(300, 850)] public int RawCreditScore;
     [Range(0f, 1f)] public float NormalizedScore;
     public List<string> ScoreReasons = new List<string>();
 
-    private readonly int minScore = 100;
+    private readonly int minScore = 300;
     private readonly int maxScore = 850;
     private readonly float capPercentage = 0.7f; // 70% cap, i.e. 595 max
 
     //UI Elements
     public TMPro.TMP_Text scoreText;
     public TMPro.TMP_Text reasonText;
-    public UnityEngine.UI.Slider scoreSlider;
+    public DialController dialController;
 
     private readonly string[] reasonBank = new string[]
     {
@@ -47,7 +47,7 @@ public class CreditScoreGenerator : MonoBehaviour
         GenerateScore();
         scoreText.text = RawCreditScore.ToString();
         reasonText.text = string.Join("\n", ScoreReasons);
-        scoreSlider.value = NormalizedScore;
+        dialController.SetDialValue(RawCreditScore);
 
     }
     public void GenerateScore()

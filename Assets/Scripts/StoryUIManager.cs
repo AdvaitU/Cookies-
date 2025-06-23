@@ -19,7 +19,8 @@ public class StoryUIManager : MonoBehaviour
     public MainStoryUI mainStoryUI;
     public TMP_Text[] recommendedStories = new TMP_Text[5];
     public TMP_Text[] recommendedStoryAuthors = new TMP_Text[5];
-
+    public int nonRandomStoriesCount = 5; // Number of non-random stories to recommend
+    public int randomStoriesCount = 3;
 
     public List<Story> selectedStories = new List<Story>();
     public List<Story> selectedRandomStories = new List<Story>();
@@ -36,7 +37,7 @@ public class StoryUIManager : MonoBehaviour
     public void LoadNextStories()
     {
         RefreshMainStory(); // Refresh Main Story UI
-        selectedStories = recommender.RecommendStories(5);      // Get 5 Recommended Stories
+        selectedStories = recommender.RecommendStories(nonRandomStoriesCount);      // Get 5 Recommended Stories
         for (int i = 0; i < selectedStories.Count; i++)
         {
             if (selectedStories[i] == mainStory) selectedStories[i] = recommender.RecommendStories(1)[0]; // Ensure main story is not in recommended stories
@@ -44,11 +45,14 @@ public class StoryUIManager : MonoBehaviour
             recommendedStoryAuthors[i].text = selectedStories[i].Author; // Display Authors of Recommended Stories
         }
 
-        selectedRandomStories = recommender.LoadRandomStories(2);
+        selectedRandomStories = recommender.LoadRandomStories(3);
+
         recommendedStories[5].text = selectedRandomStories[0].Headline; // Display Random Story
         recommendedStoryAuthors[5].text = selectedRandomStories[0].Author; // Display Author of Random Story
         recommendedStories[6].text = selectedRandomStories[1].Headline; // Display Random Story
-        recommendedStoryAuthors[6].text = selectedRandomStories[1].Author; // Display Author of Random Story
+        //recommendedStoryAuthors[6].text = selectedRandomStories[1].Author; // Display Author of Random Story
+        recommendedStories[7].text = selectedRandomStories[2].Headline; // Display Random Story
+        //recommendedStoryAuthors[7].text = selectedRandomStories[2].Author; // Display Author of Random Story
 
     }
 
