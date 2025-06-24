@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\ResetGame.cs" />
     <Compile Include="Assets\Scripts\DialController.cs" />
     <Compile Include="Assets\Scripts\CoffeeMatcher.cs" />
+    <Compile Include="Assets\Scripts\Cookies_Popup.cs" />
     <Compile Include="Assets\Scripts\StoryRecommender.cs" />
     <Compile Include="Assets\Scripts\UserProfile.cs" />
     <Compile Include="Assets\Scripts\CoffeeManager.cs" />

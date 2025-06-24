@@ -19,11 +19,16 @@ Library\Bee\artifacts\mvdfrm\Unity.2D.Tilemap.Extras.ref.dll_152C7FE740488E3E.mv
 Library\Bee\artifacts\mvdfrm\Unity.Burst.Editor.ref.dll_4F7B73E229D756B2.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Burst.ref.dll_A9D47564F0C574EF.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Collections.ref.dll_857DC386F81DA2F4.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.EditorCoroutines.Editor.ref.dll_A9E741B2F4D7FC42.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.InternalAPIEditorBridge.001.ref.dll_DB0A50572B977225.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.InternalAPIEngineBridge.001.ref.dll_CD85090190A6596A.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Mathematics.Editor.ref.dll_BC6BEDEBC6F8BA8C.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Mathematics.ref.dll_09002A919DF91B75.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.MemoryProfiler.Editor.MemoryProfilerModule.ref.dll_5C1FDE7A813D346A.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.MemoryProfiler.Editor.ref.dll_F8A1CA0AAC7005E0.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.MemoryProfiler.ref.dll_AF3350C053D02AE1.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.PlasticSCM.Editor.ref.dll_038935ADFCD4A11D.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Profiling.Core.ref.dll_DB5DBB5A21097A5E.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Rider.Editor.ref.dll_07D7D7B7487B1198.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.TextMeshPro.Editor.ref.dll_37E92434B2D8A6CF.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.TextMeshPro.ref.dll_A4B478B3CE6E8702.mvfrm

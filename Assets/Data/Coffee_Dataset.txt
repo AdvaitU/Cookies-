@@ -1,7 +1,7 @@
 Coffee Type	Boldness	Complexity	Bitterness	Temperature	Paired Best With
 Espresso Shot	95	40	90	Hot	Confronting your landlord with a spreadsheet
 Pumpkin Spice Latte	20	55	10	Warm	A highly curated bookshelf no one is allowed to touch
-Cold Brew	85	80	70	Cold	Shouting “I read the article!” after only reading the headline
+Cold Brew	85	80	70	Cold	Shouting "I read the article!" after only reading the headline
 Flat White	40	70	30	Warm	A minimalist apartment with one expensive lamp
 Black Coffee	90	35	100	Hot	Hating brunch on principle
 Oat Milk Latte	50	65	35	Warm	A podcast about wellness that accidentally radicalizes listeners
@@ -15,12 +15,12 @@ Nitro Cold Brew	80	75	70	Cold	Running a YouTube conspiracy channel out of an eco
 Chai Latte	35	60	25	Warm	Getting stuck in the airport because your crystals set off security
 Mocha	45	55	10	Hot	Crying in the shower but stylishly
 Iced Americano	70	85	80	Iced	Ghosting your therapist after they made a good point
-Cortado	65	50	45	Hot	Collecting obscure mechanical keyboards for “focus”
+Cortado	65	50	45	Hot	Collecting obscure mechanical keyboards for "focus"
 Double Ristretto	99	30	95	Hot	Finishing your tax returns in Morse code
 Latte with Vanilla	40	60	20	Warm	Being a gentle person in a terrifying world
-Espresso Tonic	85	90	75	Iced	Tweeting “capitalism is cringe” from a MacBook Pro
+Espresso Tonic	85	90	75	Iced	Tweeting "capitalism is cringe" from a MacBook Pro
 Soy Cappuccino	55	45	35	Warm	Submitting your DNA to 23andMe as performance art
-Café au Lait	30	35	15	Warm	Arguing about fonts in a group chat
+Cafe au Lait	30	35	15	Warm	Tweeting "capitalism is cringe" from a MacBook Pro
 Cuban Coffee	95	85	90	Hot	Running for local office out of spite
 Iced Dirty Chai	60	75	50	Iced	Collecting knives but for spiritual reasons
 Vietnamese Iced Coffee	80	80	60	Iced	Writing speculative fiction about neoliberal architecture

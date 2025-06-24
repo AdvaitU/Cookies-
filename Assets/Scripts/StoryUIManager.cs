@@ -26,7 +26,19 @@ public class StoryUIManager : MonoBehaviour
     public List<Story> selectedRandomStories = new List<Story>();
     public Story mainStory;
 
+    public TMP_Text currentStoryTab;
+    public TMP_Text currentStoryURL;
+
+    public GameObject popup;
+
+
     private string[] days = new string[] { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
+    const string glyphs = "abcdefghijklmnopqrstuvwxyz0123456789"; //add the characters you want
+
+    public void Awake()
+    {
+        popup.SetActive(true);  // Enable the cookies popup by default
+    }
 
     public void Start()
     {
@@ -37,13 +49,16 @@ public class StoryUIManager : MonoBehaviour
     public void LoadNextStories()
     {
         RefreshMainStory(); // Refresh Main Story UI
-        selectedStories = recommender.RecommendStories(nonRandomStoriesCount);      // Get 5 Recommended Stories
+        selectedStories = recommender.RecommendStories(5);      // Get 5 Recommended Stories
         for (int i = 0; i < selectedStories.Count; i++)
         {
             if (selectedStories[i] == mainStory) selectedStories[i] = recommender.RecommendStories(1)[0]; // Ensure main story is not in recommended stories
             recommendedStories[i].text = selectedStories[i].Headline;   // Display Recommended Stories
             recommendedStoryAuthors[i].text = selectedStories[i].Author; // Display Authors of Recommended Stories
         }
+
+        
+        //currentStoryURL.text = ; // Set Current Story URL to First Recommended Story
 
         selectedRandomStories = recommender.LoadRandomStories(3);
 
@@ -53,6 +68,11 @@ public class StoryUIManager : MonoBehaviour
         //recommendedStoryAuthors[6].text = selectedRandomStories[1].Author; // Display Author of Random Story
         recommendedStories[7].text = selectedRandomStories[2].Headline; // Display Random Story
         //recommendedStoryAuthors[7].text = selectedRandomStories[2].Author; // Display Author of Random Story
+
+
+        // Adjust Tab Name and URL
+        currentStoryTab.text = mainStory.Headline; // Set Current Story Tab to First Recommended Story
+        currentStoryURL.text = "/readwhateverisuptoday/justdataplease/" + GenerateRandomString(10, 20) + "/render.html"; // Generate a random URL string
 
     }
 
@@ -75,7 +95,18 @@ public class StoryUIManager : MonoBehaviour
         mainStoryUI.dateText.text = days[Random.Range(0,6)] + ", " + mainStory.Date + " " + Time.time.ToString("HH:mm") +" BST";// Random day for demo purposes
     }
 
-    
+    public string GenerateRandomString(int minLength, int maxLength)
+    {
+        int length = Random.Range(minLength, maxLength);
+        string randomString = "";
+        for (int i = 0; i < length; i++)
+        {
+            randomString += glyphs[Random.Range(0, glyphs.Length)];
+        }
+        return randomString;
+    }
+
+
     //public void ShowTop5Headlines()
     //{
     //    ClearOldHeadlines();

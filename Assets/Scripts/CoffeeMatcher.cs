@@ -19,7 +19,6 @@ public class CoffeeMatcher : MonoBehaviour
             Debug.LogError("Loader or UserProfile is not assigned in the inspector.");
             return;
         }
-        PublishCoffee(); // Automatically publish coffee on start
     }
 
     public CoffeeArchetype GetBestCoffee()
