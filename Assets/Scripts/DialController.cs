@@ -1,3 +1,5 @@
+// Summary: Controls the dial showing Credit Score in the UI.
+
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,7 +16,7 @@ public class DialController : MonoBehaviour
     public float minAngle = -90f; // Left end
     public float maxAngle = 90f;  // Right end
 
-    // Call this to update the needle based on the score
+    // Called in CreditScoreGenerator after generating the score. Argument passed as value is mapped to min and max angle in z-axis rotation
     public void SetDialValue(float creditScore)
     {
         float t = Mathf.InverseLerp(minCreditScore, maxCreditScore, creditScore);

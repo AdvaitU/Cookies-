@@ -1,3 +1,5 @@
+// Class to contain story information
+
 using System;
 
 [Serializable]
@@ -13,6 +15,7 @@ public class Story
     public int TimesShown = 0;
     public bool Clicked = false;
 
+    // Constructor to initialize a story with all fields - Used in TSVLoader to load stories from the TSV file
     public Story(int number, string headline, string body, string author, string date, float[] scores)
     {
         Number = number;

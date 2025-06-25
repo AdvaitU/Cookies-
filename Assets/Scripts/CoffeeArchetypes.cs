@@ -1,3 +1,5 @@
+// Public struct containing coffee archetype data
+
 [System.Serializable]
 public struct CoffeeArchetype
 {

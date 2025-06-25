@@ -1,3 +1,5 @@
+// Simply handles closing (disabling) the popup for cookies consent - Called on Button CLick of 'Accept Cookies'
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
