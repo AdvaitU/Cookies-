@@ -17,6 +17,8 @@ public class CreditScoreGenerator : MonoBehaviour
     public TMPro.TMP_Text scoreText;
     public TMPro.TMP_Text reasonText;
     public DialController dialController;
+    public GameObject loadingUI;          // Loading UI element to show while coffee is being matched
+
 
     private readonly string[] reasonBank = new string[]
     {
@@ -46,7 +48,7 @@ public class CreditScoreGenerator : MonoBehaviour
     {
         GenerateScore();
         scoreText.text = RawCreditScore.ToString();
-        reasonText.text = string.Join("\n", ScoreReasons);
+        reasonText.text = $"Content Quality Index: {GenerateNumbers(10f, 70f)}\nTrustworthiness Tier: {GenerateTier()}\n" + string.Join("\n", ScoreReasons);
         dialController.SetDialValue(RawCreditScore);
 
     }
@@ -75,7 +77,7 @@ public class CreditScoreGenerator : MonoBehaviour
         ScoreReasons.Clear();
         List<int> usedIndices = new List<int>();
 
-        int reasonCount = Random.Range(3, 5); // 3 or 4 reasons
+        int reasonCount = Random.Range(2, 5); // 3 or 4 reasons
 
         while (ScoreReasons.Count < reasonCount)
         {
@@ -86,5 +88,17 @@ public class CreditScoreGenerator : MonoBehaviour
                 usedIndices.Add(index);
             }
         }
+    }
+
+    private string GenerateNumbers(float min, float max)
+    {
+        float number = Random.Range(min, max);
+        return number.ToString("F2") + "%"; 
+    }
+
+    private string GenerateTier()
+    {
+        string[] tiers = { "Low", "Mid", "High" };
+        return tiers[Random.Range(0, tiers.Length)] + "-" + tiers[Random.Range(0, tiers.Length - 1)];
     }
 }

@@ -386,6 +386,7 @@
 "Assets/Scripts/Cookies_Popup.cs"
 "Assets/Scripts/CreditScoreGenerator.cs"
 "Assets/Scripts/DialController.cs"
+"Assets/Scripts/DisplayActivation.cs"
 "Assets/Scripts/HeadlineClick.cs"
 "Assets/Scripts/ResetGame.cs"
 "Assets/Scripts/Story.cs"

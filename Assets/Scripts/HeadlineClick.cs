@@ -18,7 +18,8 @@ public class HeadlineClick : MonoBehaviour
     // Update the other two screens on start (with the vanilla user profile)
     public void Start()
     {
-        UpdateOtherScreens();   // Credit Score updated on first frame for vanilla profile
+        StartLoading();
+        StartCoroutine(EndLoading(0.5f,2.5f));   // Credit Score updated on first frame for vanilla profile
     }
 
     // Update the other two screens on click
@@ -42,17 +43,34 @@ public class HeadlineClick : MonoBehaviour
         userProfile.UpdatePreferences(story.CategoryScores); // Update user preferences based on the clicked story's scores
 
         // Update the other two screens
-        UpdateOtherScreens(); 
+        StartLoading();
+        StartCoroutine(EndLoading(0.5f,2.5f));
     }
 
     // Wrapper function that runs the functions for the other two screens together
-    public void UpdateOtherScreens()
+    public void StartLoading()
     {
-        coffeeMatcher.PublishCoffee();         
-        creditScoreGenerator.PublishScore();   
+        coffeeMatcher.loadingUI.SetActive(true); // Hide the loading UI element
+        creditScoreGenerator.loadingUI.SetActive(true); // Hide the loading UI element
     }
 
-    
+    void DoDelayAction(float delayTime2, float delayTime3)
+    {
+        StartCoroutine(EndLoading(delayTime2, delayTime3));
+    }
+
+    IEnumerator EndLoading(float delayTime2, float delayTime3)
+    {
+        
+        yield return new WaitForSeconds(delayTime2);   //Wait for the specified delay time before continuing.
+        coffeeMatcher.loadingUI.SetActive(false); // Hide the loading UI element
+        coffeeMatcher.PublishCoffee();
+        yield return new WaitForSeconds(delayTime3);   //Wait for the specified delay time before continuing.
+        creditScoreGenerator.loadingUI.SetActive(false); // Hide the loading UI element
+        creditScoreGenerator.PublishScore();
+
+        
+    }
 
 
 }

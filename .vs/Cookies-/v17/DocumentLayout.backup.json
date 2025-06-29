@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\Personal Projects\\Cookies-\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0DB3F64B-ACC7-CC15-2118-DC7AD75362D2}|Assembly-CSharp.csproj|D:\\Personal Projects\\Cookies-\\assets\\scripts\\storyuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DB3F64B-ACC7-CC15-2118-DC7AD75362D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\storyuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DB3F64B-ACC7-CC15-2118-DC7AD75362D2}|Assembly-CSharp.csproj|D:\\Personal Projects\\Cookies-\\assets\\scripts\\creditscoregenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DB3F64B-ACC7-CC15-2118-DC7AD75362D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\creditscoregenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0DB3F64B-ACC7-CC15-2118-DC7AD75362D2}|Assembly-CSharp.csproj|D:\\Personal Projects\\Cookies-\\assets\\scripts\\headlineclick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,12 +15,16 @@
       "RelativeMoniker": "D:0:0:{0DB3F64B-ACC7-CC15-2118-DC7AD75362D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\coffeematcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DB3F64B-ACC7-CC15-2118-DC7AD75362D2}|Assembly-CSharp.csproj|D:\\Personal Projects\\Cookies-\\assets\\scripts\\dialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DB3F64B-ACC7-CC15-2118-DC7AD75362D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DB3F64B-ACC7-CC15-2118-DC7AD75362D2}|Assembly-CSharp.csproj|d:\\personal projects\\cookies-\\assets\\scripts\\storyuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DB3F64B-ACC7-CC15-2118-DC7AD75362D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\storyuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DB3F64B-ACC7-CC15-2118-DC7AD75362D2}|Assembly-CSharp.csproj|d:\\personal projects\\cookies-\\assets\\scripts\\creditscoregenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DB3F64B-ACC7-CC15-2118-DC7AD75362D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\creditscoregenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DB3F64B-ACC7-CC15-2118-DC7AD75362D2}|Assembly-CSharp.csproj|D:\\Personal Projects\\Cookies-\\assets\\scripts\\cookies_popup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DB3F64B-ACC7-CC15-2118-DC7AD75362D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cookies_popup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DB3F64B-ACC7-CC15-2118-DC7AD75362D2}|Assembly-CSharp.csproj|D:\\Personal Projects\\Cookies-\\assets\\scripts\\dialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DB3F64B-ACC7-CC15-2118-DC7AD75362D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0DB3F64B-ACC7-CC15-2118-DC7AD75362D2}|Assembly-CSharp.csproj|D:\\Personal Projects\\Cookies-\\assets\\scripts\\storyrecommender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,28 +58,27 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DialController.cs",
-              "DocumentMoniker": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\DialController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DialController.cs",
-              "ToolTip": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\DialController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DialController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Cookies_Popup.cs",
+              "DocumentMoniker": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\Cookies_Popup.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Cookies_Popup.cs",
+              "ToolTip": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\Cookies_Popup.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Cookies_Popup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T13:47:09.396Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-24T16:41:08.465Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CreditScoreGenerator.cs",
-              "DocumentMoniker": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\CreditScoreGenerator.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CreditScoreGenerator.cs",
-              "ToolTip": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\CreditScoreGenerator.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CreditScoreGenerator.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAxwDAAAAA6AAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "StoryUIManager.cs",
+              "DocumentMoniker": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\StoryUIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\StoryUIManager.cs",
+              "ToolTip": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\StoryUIManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\StoryUIManager.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAhwCcAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T18:49:04.975Z",
+              "WhenOpened": "2025-05-28T10:46:14.709Z",
               "EditorCaption": ""
             },
             {
@@ -86,10 +89,22 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\HeadlineClick.cs",
               "ToolTip": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\HeadlineClick.cs",
               "RelativeToolTip": "Assets\\Scripts\\HeadlineClick.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-19T22:18:34.101Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DialController.cs",
+              "DocumentMoniker": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\DialController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DialController.cs",
+              "ToolTip": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\DialController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DialController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T13:47:09.396Z"
             },
             {
               "$type": "Document",
@@ -99,14 +114,27 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\CoffeeMatcher.cs",
               "ToolTip": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\CoffeeMatcher.cs",
               "RelativeToolTip": "Assets\\Scripts\\CoffeeMatcher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-19T21:49:15.555Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "CreditScoreGenerator.cs",
+              "DocumentMoniker": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\CreditScoreGenerator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CreditScoreGenerator.cs",
+              "ToolTip": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\CreditScoreGenerator.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CreditScoreGenerator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T18:49:04.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "TSVLoader.cs",
               "DocumentMoniker": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\TSVLoader.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TSVLoader.cs",
@@ -118,20 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StoryUIManager.cs",
-              "DocumentMoniker": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\StoryUIManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\StoryUIManager.cs",
-              "ToolTip": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\StoryUIManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\StoryUIManager.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAAwEEAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T10:46:14.709Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "StoryRecommender.cs",
               "DocumentMoniker": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\StoryRecommender.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\StoryRecommender.cs",
@@ -143,7 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Story.cs",
               "DocumentMoniker": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\Story.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Story.cs",
@@ -155,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "UserProfile.cs",
               "DocumentMoniker": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\UserProfile.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UserProfile.cs",
@@ -167,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "CoffeeArchetypes.cs",
               "DocumentMoniker": "D:\\Personal Projects\\Cookies-\\Assets\\Scripts\\CoffeeArchetypes.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CoffeeArchetypes.cs",

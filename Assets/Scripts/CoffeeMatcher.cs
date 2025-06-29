@@ -2,6 +2,7 @@
 
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CoffeeMatcher : MonoBehaviour
 {
@@ -13,7 +14,9 @@ public class CoffeeMatcher : MonoBehaviour
     public TMP_Text coffeeTitle;             // UI Elements
     public TMP_Text coffeeBody;
     public TMP_Text coffeeTabName;           // To update the tab name in the UI on Screen 2
-    public TMP_Text coffeeURL;             // To update the URL in the UI on Screen 2
+    public TMP_Text coffeeURL;               // To update the URL in the UI on Screen 2
+    public GameObject loadingUI;             // Loading UI element to show while coffee is being matched
+    public Image coffeeImage;                // Image to show coffee image in UI
     private string coffeeInfoTemplate = "Boldness: 65%\r\nComplexity: 50%\r\nBiterness: 45%\r\nServed: Hot\r\nPairs Well With: Collecting obscure mechanical keyboards for “focus”";
 
     private void Start()
@@ -23,6 +26,7 @@ public class CoffeeMatcher : MonoBehaviour
             Debug.LogError("Loader or UserProfile is not assigned in the inspector.");
             return;
         }
+        
     }
 
     // Method to find the best coffee archetype based on user profile preferences using closest match in a 3 dimension vector space 
@@ -58,13 +62,16 @@ public class CoffeeMatcher : MonoBehaviour
         // Get the best coffee archetype based on user profile
         selectedCoffee = GetBestCoffee();
         // Update Main PageUI with selected coffee information
-        coffeeTitle.text = selectedCoffee.Name;
+        coffeeTitle.text = $"You are {CheckVowel(selectedCoffee.Name)} {selectedCoffee.Name}!!";
         string bodyText = $"Boldness: {selectedCoffee.Boldness}%\r\nComplexity: {selectedCoffee.Complexity}%\r\nBiterness: {selectedCoffee.Bitterness}%\r\nServed: {selectedCoffee.Temperature}\r\nPairs Best With: {selectedCoffee.PairedBestWith}";
         coffeeBody.text = bodyText;
 
         // Update Tab
-        coffeeTabName.text = "You're a " + selectedCoffee.Name + "! | Quiz Results";
+        coffeeTabName.text = $"You are {CheckVowel(selectedCoffee.Name)} {selectedCoffee.Name}!! | Quiz Results";
         coffeeURL.text = "/whatcoffeeareyou/users/temp" + GenerateRandomString(Random.Range(8,12)) + "/results.html";
+
+        // Put Image
+        LoadImage();
     }
 
     public string GenerateRandomString(int count = 10)
@@ -76,6 +83,34 @@ public class CoffeeMatcher : MonoBehaviour
             result += randomNumber.ToString();
         }
         return result;
+    }
+
+    public string CheckVowel(string theString)
+    {
+        char c = theString.ToLower()[0]; // Get the first character and convert to lowercase
+        if ("aeiou".IndexOf(c) >= 0)     // Check if the character is a vowel
+        {
+            return "an";
+        }
+        else
+        {
+            return "a";
+        }
+    }
+
+    // Load the Image from the Resources folder based on the selected coffee archetype name
+    public void LoadImage()
+    {
+        Sprite sprite = Resources.Load<Sprite>($"CoffeeImages/{selectedCoffee.Name}"); // No extension
+        if (sprite != null)
+        {
+            coffeeImage.sprite = sprite;
+        }
+        else
+        {
+            Debug.LogError("Image not found!");
+        }
+
     }
 
 }
