@@ -12,6 +12,7 @@ public class CoffeeMatcher : MonoBehaviour
     
     // UI Components
     public TMP_Text coffeeTitle;             // UI Elements
+    public TMP_Text coffeeYoureA;         // To update the headline in the UI on Screen 2
     public TMP_Text coffeeBody;
     public TMP_Text coffeeTabName;           // To update the tab name in the UI on Screen 2
     public TMP_Text coffeeURL;               // To update the URL in the UI on Screen 2
@@ -62,7 +63,8 @@ public class CoffeeMatcher : MonoBehaviour
         // Get the best coffee archetype based on user profile
         selectedCoffee = GetBestCoffee();
         // Update Main PageUI with selected coffee information
-        coffeeTitle.text = $"You are {CheckVowel(selectedCoffee.Name)} {selectedCoffee.Name}!!";
+        coffeeYoureA.text = $"You're {CheckVowel(selectedCoffee.Name)}"; // You're a or You're an
+        coffeeTitle.text = $"{selectedCoffee.Name}!!";                     // Name + !!
         string bodyText = $"Boldness: {selectedCoffee.Boldness}%\r\nComplexity: {selectedCoffee.Complexity}%\r\nBiterness: {selectedCoffee.Bitterness}%\r\nServed: {selectedCoffee.Temperature}\r\nPairs Best With: {selectedCoffee.PairedBestWith}";
         coffeeBody.text = bodyText;
 
